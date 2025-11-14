@@ -1,0 +1,268 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-family: serif,Arial;
+}
+ul,li,ol,a{
+    list-style: none;
+}
+.header{
+    width:100%;
+    height:120px;
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+}
+#menu-button, #menu-close{
+    display: none;
+}
+.logo{
+    float: left;
+    height: 100%;
+    width: 20%;
+    padding: 20px;
+}
+.navbar{
+    float: left;
+    width: 80%;
+    height: 120px;
+    background: rgba(0, 255, 255, 0.514);
+}
+.nav-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x:hidden ;
+    height: 60%;
+    width:100%;
+    padding: 2px 10px 2px 10px;
+    font-size: medium;
+    font-weight: 900;
+}
+#menu-button{
+    transform: translateX(700px);
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links ul{
+    width: 100%;
+    height: 48px;
+    font-weight: 900;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-evenly;
+}
+.nav-links ul li a:active{
+    color: red;
+}
+.slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:480px ;
+    gap: 1%;
+}
+.slider-img{
+    height: 100%;
+    width: 60%;
+    box-shadow:  2px 2px 30px black;
+    border-radius: 30px;
+    display: flex;
+    justify-self: center;
+    transform: translateY(20px);
+    overflow: hidden;
+    position: relative;
+}
+.arrow{
+    background: none;
+    border: none;
+    font-size: 80px;
+    font-weight: 900;
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;  
+}
+.card{
+    height: 400px;
+    width: 250px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 15px;
+    margin: 20px auto 20px auto;
+    overflow: hidden;
+}
+.card-body{
+    background:rgba(128, 128, 128, 0.466);
+    height: 100%;
+    padding: 4px;
+}
+#cart , #buy{
+    border: 2px solid cyan;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 2px;
+    background:linear-gradient(rgba(0, 0, 255, 0.842), rgba(0, 255, 255, 0.685));
+    font-size: 20px;
+}
+#cart{
+    margin-right: 20px;
+}
+summary{
+    font-size: 20px;
+    font-weight: 900;
+}
+details p {
+    overflow-y: scroll;
+    max-height: 50px;
+}
+
+.card-img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+
+@media (max-width: 500px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 25px;
+        overflow-x: hidden;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 360px;
+        position: sticky;
+        top: 0;
+    }
+    #menu-button, #menu-close{
+        display: block;
+    }
+    .navbar{
+        background: rgba(0, 0, 255, 0.541);
+        height: 100%;
+    }
+    .logo{
+        width: 20%;
+        padding: 8px;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .nav-tag{
+        background: rgba(14, 14, 243, 0.411);
+        height: 60px;
+        padding:auto;
+        font-size: 10px;
+    }
+    #menu-button{
+        transform: translateX(0px);
+        height: 27px;
+    }
+    .nav-links{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 10px;
+        flex-direction: column;
+        background-color: white;
+        height: 110vh;
+        width: 250px;
+        font-size: 20px;
+        position: absolute;
+        top: 0px;
+        box-shadow: -4px 2px 10px black;
+        transform: translateX(500px);
+        transition:  all 0.5s ease-in-out;
+    }
+    .nav-links.nav-active{
+        transform: translateX(50px);
+    }
+    .nav-links ul{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .nav-links div{
+        padding-left: 3px;
+        transform: translateY(-45px);
+    }
+    .slider-container{
+        margin-left: -30px;
+        width: 420px;
+        height: 150px;
+    }
+    .slider-img{
+        margin: 10px 5px 10px 5px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px black;
+    }
+    .pre,.next{
+        font-size: 35px;
+        font-weight: 900;
+        transform: translateY(20px);
+    }
+    .card-container{
+        margin-top: 30px;
+        height: auto;
+        width: 360px;
+    }
+    .card{
+        margin-bottom: 0px;
+        width: 160px;
+        height:auto ;
+    }
+    .card-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        padding-top: 10px;
+    }
+    .card-img img{
+        height: 120px;
+    }
+    .card-title, .card-prize{
+        font-size: 16px;
+    }
+    #cart, #buy{
+        font-size: 12px;
+        font-weight: 400;
+        padding: 2px 2px 2px 2px;
+        margin: auto;
+    }
+    #card-discription{
+        font-size: 14px;
+    }
+    .card-body{
+        height: auto;
+    }
+    details p{
+        max-height: 70px;
+        overflow-y: scroll;
+    }
+    p {
+        font-size: 12px;
+    }
+    
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body">
+    <header style="position: sticky; top: 0; z-index: 5000;">
+        <div class="header">
+            <div class="logo">
+                <img style="display: flex; align-self: center; justify-self: center;" src="./photos/Ecom-removebg-preview-resize.png" height="70px" alt="This is image of logo.">
+            </div>
+            <div class="navbar">
+                <div class="nav-tag">
+                    <h1>Welcome to Our E-Commerce Website</h1>
+                    <img id="menu-button" src="./photos/bars-solid-full.svg" alt="">
+                </div>
+        
+                <div class="nav-links">
+                    <ul>
+                        <img id="menu-close" style="align-self: flex-end; padding-right: 13px;" src="./photos/bars-solid-full.svg" height="30px" alt="">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Flash Sale</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                    <div style="font-size: 20px; font-weight: 700; width: 200px;">
+                        <a href=""style="margin-right:10px">Login</a>
+                        <a href="">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="slider-container">
+        <button class="pre arrow" onclick="pre()"><</button>
+        <div class="slider-img">
+            <img id="img1" src="" alt=" image" width="100%" style="display: flex;
+            justify-self: center;">       
+        </div>
+        <button class="next arrow" onclick="next()">></button>
+    </div>
+    
+    <div class="card-container">
+        
+    </div>
+    
+</body>
+<script src="./app.js"></script>
+</html>
